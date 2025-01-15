@@ -42,42 +42,45 @@ const FinancialCard = ({ timeFilter = 'day' }) => {
   };
 
   return (
-    <div className="incomeDetail">
-      <div className="incomeDetail__item">
-        <div className="incomeDetail__title">Total Income</div>
-        <div className="incomeDetail__amount">
-          {formatCurrency(currentData.totalIncome)}
-        </div>
-      </div>
+    // <div className="incomeDetail">
+    //   <div className="incomeDetail__item">
+    //     <div className="incomeDetail__title">Total Income</div>
+    //     <div className="incomeDetail__amount">
+    //       {formatCurrency(currentData.totalIncome)}
+    //     </div>
+    //   </div>
 
-      <div className="incomeDetail__item">
-        <div className="incomeDetail__title">Total loss Income</div>
-        <div className="incomeDetail__amount">
-          {formatCurrency(currentData.totalLossIncome)}
-        </div>
-      </div>
+    //   <div className="incomeDetail__item">
+    //     <div className="incomeDetail__title">Total loss Income</div>
+    //     <div className="incomeDetail__amount">
+    //       {formatCurrency(currentData.totalLossIncome)}
+    //     </div>
+    //   </div>
 
-      <div className="incomeDetail__item">
-        <div className="incomeDetail__title">Income</div>
-        <div className="incomeDetail__amount">
-          {formatCurrency(currentData.income)}{" "}
-          <div className="incomeDetail__amount-diff greenText">
-            <Arrow />
-            +{currentData.incomeChange}%
-          </div>
-        </div>
-      </div>
+    //   <div className="incomeDetail__item">
+    //     <div className="incomeDetail__title">Income</div>
+    //     <div className="incomeDetail__amount">
+    //       {formatCurrency(currentData.income)}{" "}
+    //       <div className="incomeDetail__amount-diff greenText">
+    //         <Arrow />
+    //         +{currentData.incomeChange}%
+    //       </div>
+    //     </div>
+    //   </div>
 
-      <div className="incomeDetail__item">
-        <div className="incomeDetail__title">Expense</div>
-        <div className="incomeDetail__amount">
-          {formatCurrency(currentData.expense)}{" "}
-          <div className="incomeDetail__amount-diff redText">
-            <Arrow />
-            {currentData.expenseChange}%
-          </div>
-        </div>
-      </div>
+    //   <div className="incomeDetail__item">
+    //     <div className="incomeDetail__title">Expense</div>
+    //     <div className="incomeDetail__amount">
+    //       {formatCurrency(currentData.expense)}{" "}
+    //       <div className="incomeDetail__amount-diff redText">
+    //         <Arrow />
+    //         {currentData.expenseChange}%
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    <div>
+      
     </div>
   );
 };

@@ -115,94 +115,97 @@ export default function RevenueChart({revenue, revenueChart}) {
     setTimeframe(event.target.value);
   };
   return (
-    <div className="RevenueChart">
-      {/* Header Section */}
-      <div className="RevenueChart__head">
-        <h6 className="RevenueChart__title">{revenue}</h6>
-        <div className="RevenueChart__tabs">
-        {["Monthly", "Weekly", "Today"].map((item) => (
-          <Button
-            key={item}
-            variant={timeframe === item ? "contained" : "outlined"}
-            // onClick={handleTimeframeChange}
-          >
-            {item}
-          </Button>
-        ))}
-      </div>
-        {/* <Select
-          className="RevenueChart__select"
-          value={timeframe}
-          onChange={handleTimeframeChange}
-        >
-          <MenuItem value="Monthly">Monthly</MenuItem>
-          <MenuItem value="Weekly">Weekly</MenuItem>
-          <MenuItem value="Daily">Daily</MenuItem>
-        </Select> */}
-      </div>
+    // <div className="RevenueChart">
+    //   {/* Header Section */}
+    //   <div className="RevenueChart__head">
+    //     <h6 className="RevenueChart__title">{revenue}</h6>
+    //     <div className="RevenueChart__tabs">
+    //     {["Monthly", "Weekly", "Today"].map((item) => (
+    //       <Button
+    //         key={item}
+    //         variant={timeframe === item ? "contained" : "outlined"}
+    //         // onClick={handleTimeframeChange}
+    //       >
+    //         {item}
+    //       </Button>
+    //     ))}
+    //   </div>
+    //     {/* <Select
+    //       className="RevenueChart__select"
+    //       value={timeframe}
+    //       onChange={handleTimeframeChange}
+    //     >
+    //       <MenuItem value="Monthly">Monthly</MenuItem>
+    //       <MenuItem value="Weekly">Weekly</MenuItem>
+    //       <MenuItem value="Daily">Daily</MenuItem>
+    //     </Select> */}
+    //   </div>
 
-      {/* Income Section */}
-      <h4 className="RevenueChart__incomeText">${revenueChart}</h4>
-      {/* Tabs Section */}
-      {/* <div className="RevenueChart__tab">
-        {["All", "Food", "Beverages"].map((category) => (
-          <Button
-            key={category}
-            variant={filter === category ? "contained" : "outlined"}
-            sx={{
-              backgroundColor:
-                filter === category ? "#FFE6E6" : "transparent",
-              color: "#FF6B6B",
-              borderColor: "#FF6B6B",
-              borderRadius: "20px",
-              textTransform: "none",
-              fontWeight: "bold",
-              ":hover": {
-                backgroundColor: filter === category ? "#FFD1D1" : "#FFE6E6",
-              },
-            }}
-            onClick={() => handleFilterChange(category)}
-          >
-            {category === "All" ? "All Food" : category}
-          </Button>
-        ))}
-      </div> */}
-      {/* Chart Section */}
-      <div className="RevenueChart__chart">
-        <ResponsiveContainer>
-          <LineChart data={data[timeframe][filter]}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis
-              dataKey="name"
-              tick={{ fontSize: 12, fill: "#999" }}
-              axisLine={false}
-              tickLine={false}
-            />
-            <YAxis
-              tick={{ fontSize: 12, fill: "#999" }}
-              axisLine={false}
-              tickLine={false}
-              tickFormatter={(value) => `$${value}`}
-            />
-            <Tooltip
-              formatter={(value) => [`$${value}`, "Revenue"]}
-              contentStyle={{
-                borderRadius: "8px",
-                border: "1px solid #FF6B6B",
-                backgroundColor: "#fff",
-              }}
-            />
-            <Line
-              type="monotone"
-              dataKey="value"
-              stroke="#b8860b"
-              strokeWidth={2}
-              fillOpacity={1}
-              dot={false}
-            />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
+    //   {/* Income Section */}
+    //   <h4 className="RevenueChart__incomeText">${revenueChart}</h4>
+    //   {/* Tabs Section */}
+    //   {/* <div className="RevenueChart__tab">
+    //     {["All", "Food", "Beverages"].map((category) => (
+    //       <Button
+    //         key={category}
+    //         variant={filter === category ? "contained" : "outlined"}
+    //         sx={{
+    //           backgroundColor:
+    //             filter === category ? "#FFE6E6" : "transparent",
+    //           color: "#FF6B6B",
+    //           borderColor: "#FF6B6B",
+    //           borderRadius: "20px",
+    //           textTransform: "none",
+    //           fontWeight: "bold",
+    //           ":hover": {
+    //             backgroundColor: filter === category ? "#FFD1D1" : "#FFE6E6",
+    //           },
+    //         }}
+    //         onClick={() => handleFilterChange(category)}
+    //       >
+    //         {category === "All" ? "All Food" : category}
+    //       </Button>
+    //     ))}
+    //   </div> */}
+    //   {/* Chart Section */}
+    //   <div className="RevenueChart__chart">
+    //     <ResponsiveContainer>
+    //       <LineChart data={data[timeframe][filter]}>
+    //         <CartesianGrid strokeDasharray="3 3" />
+    //         <XAxis
+    //           dataKey="name"
+    //           tick={{ fontSize: 12, fill: "#999" }}
+    //           axisLine={false}
+    //           tickLine={false}
+    //         />
+    //         <YAxis
+    //           tick={{ fontSize: 12, fill: "#999" }}
+    //           axisLine={false}
+    //           tickLine={false}
+    //           tickFormatter={(value) => `$${value}`}
+    //         />
+    //         <Tooltip
+    //           formatter={(value) => [`$${value}`, "Revenue"]}
+    //           contentStyle={{
+    //             borderRadius: "8px",
+    //             border: "1px solid #FF6B6B",
+    //             backgroundColor: "#fff",
+    //           }}
+    //         />
+    //         <Line
+    //           type="monotone"
+    //           dataKey="value"
+    //           stroke="#b8860b"
+    //           strokeWidth={2}
+    //           fillOpacity={1}
+    //           dot={false}
+    //         />
+    //       </LineChart>
+    //     </ResponsiveContainer>
+    //   </div>
+    // </div>
+    <div>
+      
     </div>
   );
 }
