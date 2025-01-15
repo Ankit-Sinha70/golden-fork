@@ -1,0 +1,58 @@
+.mostSellingMenuItem {
+  padding: 12px 0;
+  border-bottom: 1px solid #E6E9EB;
+  display: flex;
+      align-items: start;
+      gap: 12px;
+      &:last-child {
+        border-bottom: none;
+      }
+  &__img img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex: 50px 0 0;
+  }
+
+  &__trending{
+    font-size: 20px;
+    color: #86909C;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  &__content {
+    width: 100%;
+  }
+  &__title{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #212121;
+    margin: 0 0 4px;
+  }
+  &__subTitle{
+    font-size: 12px;
+    font-weight: 700;
+    color: #3d4b1b;
+    line-height: 20px;
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  &__order{
+    font-size: 12px;
+    font-weight: 700;
+    color: #86909C;
+    line-height: 20px
+  }
+  &__price{
+    font-size: 18px;
+    font-weight: 600;
+    color: #b8860b;
+    line-height: 24px;
+  }
+}

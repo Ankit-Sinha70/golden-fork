@@ -1,0 +1,113 @@
+.kitchenMenu {
+  @media only screen and (max-width: 1260px) {
+    .MuiGrid-container {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 30px 0 15px 0;
+    color: #3d4b1b;
+  }
+
+  &__cardTitle {
+    color: #b7872c;
+    text-align: center;
+    &.MuiTypography-root {
+      // margin-bottom: 15px;
+      font-size: 18px;
+      line-height: normal;
+      font-weight: 600;
+      padding: 10px;
+      border-bottom: 1px solid #b7872c;
+      background-color: #b7872c;
+      color: #fff;
+    }
+    // font-size: 24px !important;
+    // font-weight: 600 !important;
+    // color: #b7872c;
+    // text-align: center;
+    // margin-bottom: 15px !important;
+  }
+}
+.kitchenMenuCardsMain {
+  background-color: #fff;
+  border: 1px solid #b8860b;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.kitchenMenuCards {
+  gap: 20px;
+  padding: 15px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  @media only screen and (max-width: 1690px) {
+    flex-direction: column;
+    gap: 25px;
+  }
+  @media only screen and (max-width: 901px) {
+    flex-direction: row;
+  }
+  &__content {
+    padding: 10px 0;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 !important;
+    margin-bottom: 8px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .MuiTypography-body1 {
+    color: #3d4b1b;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  &__img {
+    img {
+      height: 215px;
+      width: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+  }
+}
+
+// code for table.
+.kitchenMenuTable {
+  margin-top: 25px;
+  .MuiPaper-root {
+    box-shadow: unset;
+    table {
+      border: 1px solid #b8860b;
+      border-collapse: collapse;
+      tr {
+        border: none;
+        th {
+          border: 1px solid #b8860b;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 28px;
+          color: #3d4b1b;
+          padding: 8px 20px;
+        }
+        td {
+          border: 1px solid #b8860b;
+          font-size: 14px;
+          color: #212121;
+          line-height: 24px;
+          padding: 8px 20px;
+        }
+      }
+    }
+  }
+}

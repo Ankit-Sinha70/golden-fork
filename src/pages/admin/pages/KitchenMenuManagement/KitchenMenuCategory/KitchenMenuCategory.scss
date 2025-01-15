@@ -1,0 +1,25 @@
+.deleteDialog {
+  .MuiPaper-root {
+    max-width: 450px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: unset;
+  }
+  &__title {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #b8860b;
+    color: #fff;
+    text-align: center;
+  }
+  &__content {
+    &.MuiDialogContent-root {
+      padding: 24px;
+      text-align: center;
+    }
+  }
+  &__action {
+    padding: 15px;
+    border-top: 2px solid #b8860b;
+  }
+}

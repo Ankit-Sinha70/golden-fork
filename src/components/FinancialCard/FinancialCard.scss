@@ -1,0 +1,68 @@
+.incomeDetail {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e6e9eb !important;
+  box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+  padding: 20px;
+  display: flex;
+  // align-items: center;
+  width: 100%;
+  @media only screen and (max-width: 1260px) {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1;
+    // text-align: center;
+  }
+  .divider {
+    height: 50px;
+    width: 1px;
+    background-color: #e0e0e0;
+    margin: 0 20px;
+  }
+  &__title {
+    margin-bottom: 6px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #86909c;
+  }
+  &__amount {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #b8860b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    &-diff {
+      font-size: 12px;
+      line-height: 20px;
+      color: #008000;
+      background: #00800015;
+      padding: 2px 4px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+
+      svg path {
+        stroke: #008000;
+      }
+      
+      &.redText {
+        color: #d32525;
+        background: #d3252515;
+        svg {
+          transform: rotate(-180deg);
+          display: block;
+        }
+        svg path {
+          stroke: #d32525;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* .PrimaryButton.MuiButtonBase-root {
+  background-color: #b8860b;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  border-radius: 35px;
+  padding: 8px 25px;
+  text-transform: capitalize;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  max-width: max-content;
+  gap: 8px;
+}
+.PrimaryButton.MuiButtonBase-root.max-w-100 {
+ max-width: 100%;
+} */
+
+.inputgroup {
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  label {
+    font-size: 14px;
+    line-height: 16px;
+    color: #c4c4c4;
+    font-weight: 400;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+
+  .MuiFormControl-root {
+    width: 100%;
+    .MuiFormLabel-root {
+      color: #c4c4c4;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+
+      &[data-shrink="false"] {
+        top: -8px;
+      }
+    }
+
+    .MuiInputBase-root {
+      .MuiInputBase-input {
+        color: #fff;
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+      }
+
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #3e4a57;
+        border-radius: 4px;
+      }
+    }
+  }
+  .passwordfeild {
+    position: relative;
+    .MuiSvgIcon-root {
+      color: #c4c4c4;
+      position: absolute;
+      right: 13px;
+      top: 10px;
+      height: 17px;
+      width: 17px;
+      cursor: pointer;
+    }
+    .MuiInputBase-input {
+      padding-right: 45px !important;
+    }
+  }
+}
+.boxTitle {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #eee1d6;
+}
+/* for margin-bottom */
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+/* common css */
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+.MuiList-root .MuiMenuItem-root:hover {
+  background-color: #1c2b3b;
+}
+
+.headTitle {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #3d4b1b;
+  /* margin-bottom: 15px; */
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+  }
+}
+.headSubTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: #3d4b1b;
+  @media only screen and (max-width: 600px) {
+    font-size: 18px;
+  }
+}
+
+.add_list {
+  display: flex;
+  justify-content: flex-end;
+  /* width: 100%; */
+  gap: 15px;
+  /* margin-top: 15px; */
+  position: absolute;
+  right: 24px;
+  bottom: 14px;
+  /* @media only screen and (max-width: 1200px) {
+    bottom: 2px;
+  } */
+}

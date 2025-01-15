@@ -1,0 +1,76 @@
+.whiteCard {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 2px solid #b8860b;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  border: 1px solid #e6e9eb !important;
+  box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+  position: relative;
+  overflow: hidden;
+  justify-content: space-between;
+  &:hover {
+    transform: translateY(-10px);
+  }
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: #b8860b;
+    height: 3px;
+    width: 100%;
+  }
+  &__heading {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #86909c;
+    margin-bottom: 6px;
+  }
+  &__count {
+    font-size: 26px;
+    font-weight: 600;
+    color: #212121;
+    line-height: 36px;
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      color: #212121;
+    }
+  }
+  &__img {
+    background-color: #b8860b59;
+    padding: 10px;
+    border-radius: 4px;
+    img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
+}
+
+.MuiGrid-container {
+  & > div:last-child .whiteCard{
+    &::after {
+        background: #86909c;
+    }
+    &__img {
+        background-color: rgba(230, 233, 235, 0.3) !important;
+    }
+  }
+  & > div:nth-child(2) .whiteCard{
+    &::after {
+        background: #3D4B1B;
+    }
+    &__img {
+        background-color: #3d4b1b2e !important;
+    }
+  }
+}

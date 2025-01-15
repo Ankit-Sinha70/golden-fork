@@ -1,0 +1,189 @@
+.moduleBox.restaurant-list {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #e6e9eb;
+  box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.moduleBox {
+  &__addInput {
+    width: 100%;
+  }
+}
+
+.pageTemplate {
+  &__head {
+    &.table {
+      &-head {
+        @media only screen and (max-width: 1260px) {
+          flex-wrap: wrap;
+          padding: 6px 0;
+        }
+        &-input {
+          width: 100%;
+          @media only screen and (max-width: 1260px) {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+    // margin-bottom: 0;
+    // .table-head-addInput {
+    //   @media only screen and (max-width: 1260px) {
+    //     padding: 6px 0;
+    //   }
+    //   @media only screen and (max-width: 640px) {
+    //     width: 100%;
+    //     flex-direction: column;
+    //     gap: 10px;
+    //   }
+    //   @media only screen and (max-width: 640px) {
+    //     .MuiBox-root {
+    //       width: 100%;
+    //     }
+    //   }
+
+    // .MuiInput-underline {
+    //   &::before {
+    //     border-bottom: none;
+    //   }
+    //   .MuiInputBase-input {
+    //     height: 35px !important;
+    //     border-radius: 8px !important;
+    //     font-size: 14px !important;
+    //     font-weight: 400;
+    //   }
+    // }
+    // .MuiBox-root {
+    //   .MuiFormControl-fullWidth {
+    //   }
+    // }
+
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: center;
+    //   margin-bottom: 11px;
+
+    //   &-addRes {
+    //     display: flex;
+    //     justify-content: center;
+    //     gap: 30px;
+    //     margin-bottom: 0;
+    //     align-items: center;
+    //     padding: 6px 28px;
+
+    //     &-btn {
+    //       background: #b8860b;
+    //       padding: 6px 24px;
+    //       display: flex;
+    //       gap: 3px;
+    //       height: 35px;
+    //       border-radius: 8px;
+    //       svg {
+    //         rect {
+    //           fill: none;
+    //         }
+    //       }
+    //       .MuiButton-text {
+    //         background: none;
+    //         padding: 0;
+    //         color: #fff;
+    //         font-size: 14px;
+    //         font-weight: 400;
+    //       }
+    //     }
+    //   }
+    //   &-input {
+    //     border: 1px solid #3d4b1b;
+    //     padding: 6px 8px;
+    //     border-radius: 8px;
+    //     color: #212121;
+    //     font-weight: 500;
+    //     font-size: 16px;
+    //     display: flex;
+    //     gap: 10px;
+    //     margin: 0;
+    //     height: 35px;
+
+    //     input {
+    //       outline: none;
+    //       border: none;
+    //       color: #fff;
+    //       font-size: 14px;
+    //       font-weight: 400;
+    //       svg {
+    //         height: 20px;
+    //         width: 20px;
+    //         object-fit: contain;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
+.table-head-select {
+  min-width: 120px;
+  // border: 1px solid #212121;
+  // border-radius: 8px;
+  // .MuiFormControl-root {
+  //   .MuiInputBase-root {
+      .MuiNativeSelect-select {
+        background-color: #b8860b !important;
+        color: #212121 !important;
+        font-weight: 550 !important
+      }
+  //   }
+  // }
+  .MuiInputBase-root {
+    &:before {
+      border: none !important;
+    }
+    .MuiNativeSelect-select {
+      background: #b8860b;
+      border-radius: 8px;
+      padding: 2px 8px;
+      height: 40px;
+      box-sizing: border-box;
+      font-size: 12px;
+      line-height: 18px;
+      color: #fff;
+      min-height: 26px;
+    }
+    svg {
+      color: #212121;
+    }
+  }
+}
+
+.date-management {
+  input {
+    padding: 7px;
+    height: auto;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  fieldset {
+    border: 1px solid #3d4b1b;
+  }
+}
+
+.searchbarBox {
+  position: relative;
+  input {
+    border: 1px solid #3d4b1b;
+    padding: 11px 40px 11px 12px;
+    border-radius: 8px;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  svg {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}

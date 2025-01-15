@@ -1,0 +1,34 @@
+.foodTable {
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #3d4b1b;
+  }
+
+  &__item {
+    font-size: 14px;
+    font-weight: 600;
+    color: #212121;
+    line-height: 24px;
+  }
+  &__items {
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+  }
+  &__itemMenu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    p {
+      font-size: 13px;
+      line-height: normal;
+      color: #aaa;
+    }
+  }
+}

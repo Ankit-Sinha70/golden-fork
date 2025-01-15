@@ -1,0 +1,15 @@
+.tableCard {
+  .tableCard__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-bottom: none;
+  }
+}
+
+.moduleBox{
+  &__serachFilter{
+      display: flex;
+      gap: 20px;
+  }
+}

@@ -1,0 +1,42 @@
+.error{
+    background: #212121;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__content{
+       max-width: 500px;
+       margin: 0 auto;
+       h2{
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 400;
+         margin-top: 15px;
+         color: #b8860b;
+       }
+    }
+    &__num{
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 700;
+        color: #b8860b;
+    }
+    &__message{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #b8860b;
+        margin: 25px 0;
+    }
+    a{
+        text-decoration: none;
+    background: #b8860b80;
+    padding: 12px 10px;
+    border-radius: 15px;
+    color: #fff;
+
+    }
+}   

@@ -1,0 +1,97 @@
+.RevenueChart {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e6e9eb !important;
+  box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+  padding: 20px;
+  &__IconButtonInner {
+    display: flex;
+    align-items: center;
+  }
+  &__innerBtn {
+    background-color: #ffe6e6;
+    color: "#FF6B6B";
+    &:hover {
+      background-color: "#FFD1D1";
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #212121;
+    margin: 0;
+  }
+
+  &__head {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin: 0 0 20px;
+    justify-content: space-between;
+    button {
+      background-color: #b8860b80;
+    }
+    @media only screen and (max-width: 600px) {
+      flex-wrap: wrap;
+     }
+  }
+  &__tabs {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    button {
+      font-size: 12px;
+      line-height: 16px;
+      color: #212121;
+      padding: 2px 8px;
+      background-color: transparent;
+      text-transform: capitalize;
+      min-width: 0;
+      background: #fff;
+      border: 1px solid #b8860b;
+      box-shadow: none;
+      &.active {
+        background: #b8860b;
+        color: #fff;
+      }
+    }
+  }
+  &__select {
+    background-color: #b8860b80;
+    color: #b8860b;
+    border-radius: 20px;
+    font-weight: 700;
+  }
+  &__incomeText {
+    margin-bottom: 14px;
+    text-align: center;
+    color: #b8860b;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  &__tab {
+    // direction="row" justifyContent="center" spacing={2} sx={{ mb: 3 }}
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-direction: row !important;
+    button {
+      color: #b8860b;
+      background-color: #b8860b80;
+      border: 1px solid #b8860b;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+  &__chart {
+    // sx={{ width: "100%", height: "300px" }}
+    width: 100%;
+    height: 300px;
+  }
+}
+.grayText {
+  color: gray;
+}

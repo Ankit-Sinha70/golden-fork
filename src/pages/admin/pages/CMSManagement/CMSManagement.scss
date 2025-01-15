@@ -1,0 +1,112 @@
+.cms {
+  &__title {
+    text-align: center;
+  }
+  &__content {
+    margin-top: 40px;
+  }
+  &__questions {
+    margin-top: 40px;
+    width: 100%;
+    .MuiButtonBase-root {
+      min-height: unset;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #b8860b;
+      border-radius: 4px;
+      .MuiAccordionSummary-root {
+        box-shadow: none !important;
+      }
+      &.Mui-expanded {
+        min-height: unset;
+      }
+    }
+    .MuiAccordionSummary-content {
+      color: #c29671;
+      font-weight: 500;
+      line-height: 24px;
+      font-size: 18px;
+      margin: 0 !important;
+    }
+    .MuiPaper-root {
+      background: #b8860b;
+      margin: 20px 0;
+    }
+    .MuiAccordionDetails-root {
+        color: #b8860b;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 15px;
+        background: #fff;
+        border: 1px solid #b8860b;
+        &:first-child {
+            border-top: none;
+        }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    .MuiAccordionSummary-expandIconWrapper {
+      svg {
+        fill: #c29671;
+      }
+    }
+  }
+  .btnPart {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+    &-delete {
+      path {
+        fill: #b61616;
+      }
+    }
+  }
+  .MuiAccordionSummary-content {
+    color: #b8860b;
+  }
+  &__accordion {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.AddfaqModel {
+  .MuiPaper-root {
+    max-width: 550px !important;
+    @media only screen and (max-width: 991px) {
+      width: 95% !important;
+    }
+    textarea {
+      padding: 4px;
+    }
+  }
+}
+
+.dialog {
+  &__form {
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      &-accordion {
+        margin-bottom: 0;
+        gap: 25px;
+      }
+    }
+    &-editFaqs {
+      margin-bottom: 15px;
+    }
+  }
+  &__btn {
+    margin-top: 20px;
+  }
+}
+
+.table-head-addInput-btn {
+  svg {
+    fill: #fff;
+  }
+}

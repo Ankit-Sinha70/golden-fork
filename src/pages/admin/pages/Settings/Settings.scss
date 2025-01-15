@@ -1,0 +1,53 @@
+.settingForm {
+  background-color: #fff;
+  padding: 15px;
+  &__profileContainer {
+    margin-bottom: 55px;
+    // background: linear-gradient(180deg, #c29671 0%, #996437 100%);
+    background: linear-gradient(
+      0deg,
+      rgba(61, 75, 27, 1) 65%,
+      rgba(184, 134, 11, 1) 100%
+    );
+    border-radius: 8px 8px 0 0;
+    .MuiButtonBase-root {
+      top: 40px;
+      left: 15px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .MuiAvatar-root {
+      width: 80px;
+      height: 80px;
+    }
+    .formCard--btnPart .MuiButtonBase-root {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.two_col_field_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  @media only screen and (max-width: 575px) {
+    grid-template-columns: 1fr;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 30px !important;
+  }
+}
+.inputGroup__title{
+  font-size: 14px;
+  line-height: 16px;
+  color: #212121;
+  margin-bottom: 8px;
+  font-weight: 600;
+  display: block;
+}
+.formCard--btnPart{
+  text-align: right;
+  @media only screen and (max-width: 575px) {
+    margin-top: 20px!important;
+  }
+}

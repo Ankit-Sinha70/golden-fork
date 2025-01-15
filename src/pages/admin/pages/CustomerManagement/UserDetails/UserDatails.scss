@@ -1,0 +1,73 @@
+.UserDetail {
+  // css for left content
+  &__leftContents {
+    padding: 20px !important;
+  }
+  &__leftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    &-name {
+      font-size: 18px;
+      font-weight: 500;
+      color: #212121;
+      line-height: 25px;
+    }
+  }
+  //   css for right
+  &__rightContents {
+    border-left: 1px solid #86909c;
+    padding: 0 !important;
+  }
+  &__rightContent {
+    &_details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 30px;
+      &-info {
+        color: #86909c;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        gap: 20px;
+        span {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 20px;
+          color: #212121;
+        }
+      }
+    }
+    &_personalInfos {
+      &-aboutDetail {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+        padding: 30px;
+        border-top: 1px solid #86909c;
+        justify-content: space-between;
+
+        &.bottom {
+          border-top: none;
+          justify-content: space-between;
+          // padding: 15px 30px 30px 30px;
+        }
+      }
+      &-topTitle {
+        h6 {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 15px;
+          color: #212121;
+        }
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          color: #212121;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

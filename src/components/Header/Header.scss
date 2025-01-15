@@ -1,0 +1,113 @@
+.mainHeader {
+  background-color: #3D4B1B;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  left: 280px;
+  right: 0;
+  z-index: 999;
+  @media only screen and (max-width: 991px) {
+    left: 0;
+    padding: 8px 20px;
+    padding-left: 45px;
+   
+  }
+  &__profile-menu{
+    .MuiPaper-elevation{
+      right: 8px;
+      left: auto!important;
+    }
+  }
+  &__search {
+    background: #3e4a57;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+    height: 30px;
+    padding: 4px 10px;
+    input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 14px;
+      line-height: 21px;
+      color: #fff;
+      padding: 0;
+      &::placeholder {
+        color: #ffffffcc;
+      }
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #ffffff;
+    }
+    fieldset {
+      border: none;
+    }
+  }
+  &__profile {
+    .mainHeader__profile-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      line-height: 21px;
+      color: #c29671;
+      padding: 0;
+      background: transparent;
+      border: none;
+      text-transform: capitalize;
+      @media only screen and (max-width: 991px) {
+        font-size: 0;
+        gap: 0;
+        justify-content: end;
+      }
+    }
+    .mainHeader__profile-img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: #3e4a57;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ffffff80;
+      object-fit: cover;
+      svg {
+        height: 24px;
+        width: 24px;
+      }
+    }
+    &-menu {
+      .MuiList-root {
+        padding: 0;
+        .MuiButtonBase-root {
+          padding: 5px 10px;
+          font-size: 12px;
+          line-height: 18px;
+          color: #b8860b;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          box-sizing: border-box;
+          height: auto;
+          min-height: 0;
+          svg path {
+            fill: #b8860b;
+          }
+          &:hover {
+            background: #3E4A57;
+          }
+        }
+      }
+    }
+  }
+}
